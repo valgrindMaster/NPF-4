@@ -26,16 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 for dict in tempArray {
                     let parkName = dict["parkName"]! as! String
                     let parkLocation = dict["parkLocation"]! as! String
+                    let parkDescription = dict["description"]! as! String
                     let latitude = Double(dict["latitude"]! as! String)!
                     let longitude = Double(dict["longitude"]! as! String)!
                     let link = dict["link"]! as! String
                     let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
                     
-                    let p = Park(coordinate: coordinate, parkName: parkName, parkLocation: parkLocation, link: link)
+                    let p = Park(coordinate: coordinate, parkName: parkName, parkLocation: parkLocation, parkDescription: parkDescription, link: link)
                     parks.append(p)
                 }
                 
-                parks.sort(by: {$0.title! < $1.title!})
+                parks.sort(by: {$0.name! < $1.name!})
             } catch {
                 print(error)
             }

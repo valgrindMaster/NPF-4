@@ -13,6 +13,8 @@ import CoreLocation
 class Parks: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
+    let viewIdentifier = "parkcell"
+    
     var locationManager = CLLocationManager()
     var parks: [Park] = []
     var myLocation = CLLocation()
@@ -24,9 +26,9 @@ class Parks: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLoc
         
         switch segmentedControl.selectedSegmentIndex {
             case 0:
-                parks.sort(by: {$0.title! < $1.title!})
+                parks.sort(by: {$0.name! < $1.name!})
             case 1:
-                parks.sort(by: {$0.title! > $1.title!})
+                parks.sort(by: {$0.name! > $1.name!})
             case 2:
                 parks.sort(by: {$0.distance(to: myLocation) < $1.distance(to: myLocation)})
             default:
@@ -67,21 +69,21 @@ class Parks: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLoc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = ParkCell(park: parks[indexPath.row], reuseIdentifier: "parkcell")
-        cell.textLabel?.text = cell.getPark().title
+        let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: viewIdentifier)
+        let park = parks[indexPath.row]
         
-        let parkLocation = CLLocation(latitude: cell.getPark().coordinate.latitude, longitude: cell.getPark().coordinate.longitude)
+        cell.textLabel?.text = park.name
         
+        let parkLocation = CLLocation(latitude: park.coordinate.latitude, longitude: park.coordinate.longitude)
         let distanceMeters = abs(parkLocation.distance(from: myLocation))
         
         cell.detailTextLabel?.text = String(format:"Distance: %.2f miles", (distanceMeters * 0.00062))
 
-        
         return cell
     }
     
 
-      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let park = parks[indexPath.row]
         let parkDetail = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ParkDetail")  as! ParkDetail
         parkDetail.park = park

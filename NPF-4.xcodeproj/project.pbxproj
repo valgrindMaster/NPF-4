@@ -26,7 +26,6 @@
 		3F267A582088F99B00E6AD21 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F267A572088F99B00E6AD21 /* Favorites.swift */; };
 		3F267A5A2088F9A400E6AD21 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F267A592088F9A400E6AD21 /* About.swift */; };
 		C6B67742208E3D3A00753E3F /* ParkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B67741208E3D3A00753E3F /* ParkDetail.swift */; };
-		C6CBE56C208D90AC00126B7E /* ParkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CBE56B208D90AC00126B7E /* ParkCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		3F267A572088F99B00E6AD21 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		3F267A592088F9A400E6AD21 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		C6B67741208E3D3A00753E3F /* ParkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetail.swift; sourceTree = "<group>"; };
-		C6CBE56B208D90AC00126B7E /* ParkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 				3F267A552088F98A00E6AD21 /* Parks.swift */,
 				3F267A572088F99B00E6AD21 /* Favorites.swift */,
 				3F267A592088F9A400E6AD21 /* About.swift */,
-				C6CBE56B208D90AC00126B7E /* ParkCell.swift */,
 				C6B67741208E3D3A00753E3F /* ParkDetail.swift */,
 			);
 			path = "View Controllers";
@@ -227,7 +224,6 @@
 				3F267A272088ED4000E6AD21 /* AppDelegate.swift in Sources */,
 				3F267A292088ED4000E6AD21 /* FirstViewController.swift in Sources */,
 				3F267A582088F99B00E6AD21 /* Favorites.swift in Sources */,
-				C6CBE56C208D90AC00126B7E /* ParkCell.swift in Sources */,
 				3F267A452088EF4500E6AD21 /* Park.swift in Sources */,
 				3F267A562088F98A00E6AD21 /* Parks.swift in Sources */,
 			);
