@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var parks: [Park] = []
+    
+    var tabBarController: UITabBarController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -27,16 +29,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let parkName = dict["parkName"]! as! String
                     let parkLocation = dict["parkLocation"]! as! String
                     let parkDescription = dict["description"]! as! String
+                    let imageUrl = dict["imageLink"]! as! String
+                    let dateFormed = dict["dateFormed"]! as! String
+                    let area = dict["area"]! as! String
                     let latitude = Double(dict["latitude"]! as! String)!
                     let longitude = Double(dict["longitude"]! as! String)!
                     let link = dict["link"]! as! String
                     let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
                     
-                    let p = Park(coordinate: coordinate, parkName: parkName, parkLocation: parkLocation, parkDescription: parkDescription, link: link)
+                    let p = Park(coordinate: coordinate, parkName: parkName, parkLocation: parkLocation, parkDescription: parkDescription, imageUrl: imageUrl, dateFormed: dateFormed, area: area, link: link)
                     parks.append(p)
                 }
                 
-                parks.sort(by: {$0.name! < $1.name!})
+                parks.sort(by: {$0.name < $1.name})
             } catch {
                 print(error)
             }

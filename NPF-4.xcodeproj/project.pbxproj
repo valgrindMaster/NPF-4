@@ -23,9 +23,11 @@
 		3F267A522088F87900E6AD21 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F267A512088F87900E6AD21 /* heart.png */; };
 		3F267A542088F8DF00E6AD21 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F267A532088F8DF00E6AD21 /* about.png */; };
 		3F267A562088F98A00E6AD21 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F267A552088F98A00E6AD21 /* Parks.swift */; };
-		3F267A582088F99B00E6AD21 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F267A572088F99B00E6AD21 /* Favorites.swift */; };
 		3F267A5A2088F9A400E6AD21 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F267A592088F9A400E6AD21 /* About.swift */; };
+		C619A834208F142B00D2655A /* view_about_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C619A833208F142A00D2655A /* view_about_bg.jpg */; };
 		C6B67742208E3D3A00753E3F /* ParkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B67741208E3D3A00753E3F /* ParkDetail.swift */; };
+		C6CCB317208EBF3B0094971B /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CCB316208EBF3B0094971B /* FavoritesManager.swift */; };
+		C6CCB319208ED5490094971B /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CCB318208ED5490094971B /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +49,11 @@
 		3F267A512088F87900E6AD21 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		3F267A532088F8DF00E6AD21 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		3F267A552088F98A00E6AD21 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
-		3F267A572088F99B00E6AD21 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		3F267A592088F9A400E6AD21 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		C619A833208F142A00D2655A /* view_about_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view_about_bg.jpg; sourceTree = "<group>"; };
 		C6B67741208E3D3A00753E3F /* ParkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetail.swift; sourceTree = "<group>"; };
+		C6CCB316208EBF3B0094971B /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		C6CCB318208ED5490094971B /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +118,9 @@
 			children = (
 				3F267A462088F0AE00E6AD21 /* MapVC.swift */,
 				3F267A552088F98A00E6AD21 /* Parks.swift */,
-				3F267A572088F99B00E6AD21 /* Favorites.swift */,
 				3F267A592088F9A400E6AD21 /* About.swift */,
 				C6B67741208E3D3A00753E3F /* ParkDetail.swift */,
+				C6CCB318208ED5490094971B /* Favorites.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -125,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				3F267A442088EF4500E6AD21 /* Park.swift */,
+				C6CCB316208EBF3B0094971B /* FavoritesManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 		3F267A482088F5B300E6AD21 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C619A833208F142A00D2655A /* view_about_bg.jpg */,
 				3F267A532088F8DF00E6AD21 /* about.png */,
 				3F267A512088F87900E6AD21 /* heart.png */,
 				3F267A4D2088F67A00E6AD21 /* tree.png */,
@@ -203,6 +209,7 @@
 				3F267A302088ED4000E6AD21 /* Assets.xcassets in Resources */,
 				3F267A4A2088F5C200E6AD21 /* map.png in Resources */,
 				3F267A402088EDD300E6AD21 /* data.plist in Resources */,
+				C619A834208F142B00D2655A /* view_about_bg.jpg in Resources */,
 				3F267A2E2088ED4000E6AD21 /* Main.storyboard in Resources */,
 				3F267A522088F87900E6AD21 /* heart.png in Resources */,
 				3F267A4E2088F67A00E6AD21 /* tree.png in Resources */,
@@ -220,10 +227,11 @@
 				C6B67742208E3D3A00753E3F /* ParkDetail.swift in Sources */,
 				3F267A472088F0AE00E6AD21 /* MapVC.swift in Sources */,
 				3F267A5A2088F9A400E6AD21 /* About.swift in Sources */,
+				C6CCB319208ED5490094971B /* Favorites.swift in Sources */,
+				C6CCB317208EBF3B0094971B /* FavoritesManager.swift in Sources */,
 				3F267A2B2088ED4000E6AD21 /* SecondViewController.swift in Sources */,
 				3F267A272088ED4000E6AD21 /* AppDelegate.swift in Sources */,
 				3F267A292088ED4000E6AD21 /* FirstViewController.swift in Sources */,
-				3F267A582088F99B00E6AD21 /* Favorites.swift in Sources */,
 				3F267A452088EF4500E6AD21 /* Park.swift in Sources */,
 				3F267A562088F98A00E6AD21 /* Parks.swift in Sources */,
 			);
@@ -365,7 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DY6ZTKGZ8;
 				INFOPLIST_FILE = "NPF-4/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "oliver.NPF-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,7 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DY6ZTKGZ8;
 				INFOPLIST_FILE = "NPF-4/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "oliver.NPF-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";

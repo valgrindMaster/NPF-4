@@ -26,9 +26,9 @@ class Parks: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLoc
         
         switch segmentedControl.selectedSegmentIndex {
             case 0:
-                parks.sort(by: {$0.name! < $1.name!})
+                parks.sort(by: {$0.name < $1.name})
             case 1:
-                parks.sort(by: {$0.name! > $1.name!})
+                parks.sort(by: {$0.name > $1.name})
             case 2:
                 parks.sort(by: {$0.distance(to: myLocation) < $1.distance(to: myLocation)})
             default:
